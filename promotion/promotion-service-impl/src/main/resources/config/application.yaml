@@ -2,9 +2,9 @@ spring:
   # datasource
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://180.167.213.26:13306/mall_promotion?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://127.0.0.1:3308/mall_promotion?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     driver-class-name: com.mysql.jdbc.Driver
-    username: root
+    username: ${MALL_MYSQL_USER}
     password: ${MALL_MYSQL_PASSWORD}
     # TODO 芋艿, 后续优化下 druid 参数
     druid:
