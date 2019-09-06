@@ -20,9 +20,18 @@
             <include refid="FIELDS" />
         FROM product_sku
             WHERE id IN
+
+        <choose>
+          <when test="ids != null and ids.size() > 0">
             <foreach item="id" collection="ids" separator="," open="(" close=")" index="">
                 #{id}
             </foreach>
+          </when>
+          <otherwise>
+             ()
+          </otherwise>
+        </choose>
+
             AND deleted = 0
     </select>
 
