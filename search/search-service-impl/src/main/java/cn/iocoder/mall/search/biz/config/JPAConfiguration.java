@@ -1,5 +1,13 @@
 package cn.iocoder.mall.search.biz.config;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.common.transport.TransportAddress;
+import org.elasticsearch.xpack.client.PreBuiltXPackTransportClient;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
@@ -16,5 +24,5 @@ public class JPAConfiguration {
                 .addTransportAddress(new TransportAddress(InetAddress.getByName("127.0.0.1"), 9300));
         return client;
     }
-    	
+
 }
