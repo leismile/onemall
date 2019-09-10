@@ -1,11 +1,11 @@
 # es
 spring:
   data:
-#     elasticsearch:
+     elasticsearch:
 #       cluster-name: elasticsearch
 #       cluster-nodes: 127.0.0.1:9300
-#       repositories:
-#         enable: true
+       repositories:
+         enable: true
 
 # dubbo
 dubbo:
