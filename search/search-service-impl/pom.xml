@@ -48,7 +48,7 @@
         <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>x-pack-transport</artifactId>
-            <version>6.2.4</version>
+            <version>6.4.3</version>
         </dependency>
 
         <!-- RPC 相关 -->
@@ -108,7 +108,7 @@
             </plugin>
         </plugins>
     </build>
-    
+
    <repositories>
       <!-- add the elasticsearch repo -->
       <repository>
